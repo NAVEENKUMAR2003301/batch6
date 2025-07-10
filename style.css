@@ -1,0 +1,50 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+/* h1{
+    background-color: black;
+    color: white;
+    font-size: 50px;
+} */
+
+/* h3{
+    font-size: 55px;
+} */
+
+/* p{
+    background-color: blueviolet;
+} */
+
+
+.one{
+    font-size: 30px;
+    font-weight: 800;
+}
+
+.first{
+    color: aqua;
+}
+
+.second{
+    color: blue;
+}
+
+.third{
+    color: blueviolet;
+}
+
+#one{
+    font-size: 60px;
+}
+
+input[type="password"]{
+  color: aqua;
+}
+
+ul > *{
+    font-size: 30px;
+}
