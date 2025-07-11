@@ -4,6 +4,14 @@
     box-sizing: border-box;
 }
 
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&display=swap');
+
+/* offline font syntex  */
+
+@font-face{
+    font-family: "ben";
+    src: url(./assets/Playwrite_VN_Guides/PlaywriteVNGuides-Regular.ttf);
+}
 
 /* h1{
     background-color: black;
@@ -19,7 +27,7 @@
     background-color: blueviolet;
 } */
 
-
+/* 
 .one{
     font-size: 30px;
     font-weight: 800;
@@ -47,4 +55,84 @@ input[type="password"]{
 
 ul > *{
     font-size: 30px;
+} */
+
+
+h1{
+    color: #0D5EA6;
+    background-color: #EAA64D;
+}
+
+.one{
+    font-size: 1em;
+    font-weight:bolder;
+}
+
+.parent{
+    font-size: 50px;
+}
+
+.font{
+    font-size: 100px;
+    font-weight: bold;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    text-align: end;
+}
+
+.font1{
+    font-size: 100px;
+    font-weight: bold;
+    font-family: "Bitcount Grid Double", system-ui;
+}
+
+.font1a{
+    font-size: 100px;
+    font-weight: bold;
+    font-family: "Dancing Script", cursive;
+}
+
+.font2{
+    font-size: 100px;
+    font-weight: bold;
+    font-family: "ben";
+}
+
+.box-sizing{
+    /* padding: 10px 20px 30px 50px; */
+    padding-top: 10px;
+    padding-right: 30px;
+    padding-bottom: 50px;
+    padding-left: 20px;
+
+   
+
+    border-top:2px solid red ;
+    border-right:50px solid maroon ;
+    border-bottom:20px solid orange ;
+    border-left:50px solid green ;
+
+    /* margin: 50px 20px 30px 20px; */
+
+    margin-top: 50px;
+    margin-right:30px ;
+    margin-bottom: 30px;
+    margin-left: 20px;
+
+
+}
+
+.box{
+    width: 200px;
+    height: 200px;
+    background-color: aqua;
+
+    border: 10px solid blueviolet;
+
+    padding-left: 80px;
+    padding-top: 80px;
+
+
+    margin-left: 300px;
+    margin-top: 140px;
+    margin-right: 500px;
 }
