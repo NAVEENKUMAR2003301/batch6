@@ -4,135 +4,117 @@
     box-sizing: border-box;
 }
 
-@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&display=swap');
-
-/* offline font syntex  */
-
-@font-face{
-    font-family: "ben";
-    src: url(./assets/Playwrite_VN_Guides/PlaywriteVNGuides-Regular.ttf);
-}
-
-/* h1{
+.single-page{
+    width: 100vw;
+    height: 130vh;
     background-color: black;
-    color: white;
-    font-size: 50px;
-} */
-
-/* h3{
-    font-size: 55px;
-} */
-
-/* p{
-    background-color: blueviolet;
-} */
-
-/* 
-.one{
-    font-size: 30px;
-    font-weight: 800;
 }
 
-.first{
+.single-page > .header{
+    width: 100vw;
+    height: 10vh;
+
+    background-color: black;
     color: aqua;
-}
-
-.second{
-    color: blue;
-}
-
-.third{
-    color: blueviolet;
-}
-
-#one{
-    font-size: 60px;
-}
-
-input[type="password"]{
-  color: aqua;
-}
-
-ul > *{
     font-size: 30px;
-} */
+    text-align: center;
 
-
-h1{
-    color: #0D5EA6;
-    background-color: #EAA64D;
+    padding-top: 30px;
 }
 
-.one{
-    font-size: 1em;
-    font-weight:bolder;
+.single-page > img{
+    width: 300px;
+    height: 300px;
+
+    margin-left: 550px;
 }
 
-.parent{
-    font-size: 50px;
+.single-page > p {
+    max-width: 60%;
+
+    text-align: center;
+    color: brown;
+
+    margin-left: 20%;
+    margin-top: 20px;
+    margin-bottom: 20px;
 }
 
-.font{
-    font-size: 100px;
-    font-weight: bold;
-    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    text-align: end;
+
+@media(max-width:1301px){
+    .single-page > img{
+    width: 300px;
+    height: 300px;
+
+    margin-left: 500px;
+}}
+
+@media(max-width:1151px){
+    .single-page > img{
+    width: 300px;
+    height: 300px;
+
+    margin-left: 400px;
+}
+}
+/* labtop  */
+@media(max-width:1024px){
+    .single-page {
+        height: 140vh;
+    }
+    .single-page > img{
+        margin-left: 380px;
+    }
 }
 
-.font1{
-    font-size: 100px;
-    font-weight: bold;
-    font-family: "Bitcount Grid Double", system-ui;
+/* tablet  */
+
+@media(max-width:769px){
+    .single-page > img {
+        margin-left: 230px;
+    }
+
+    .single-page > p {
+        max-width: 80%;
+        margin-left: 10%;
+        margin-top: 0;
+    }
 }
 
-.font1a{
-    font-size: 100px;
-    font-weight: bold;
-    font-family: "Dancing Script", cursive;
+/* mobile-l */
+
+@media(max-width:426px){
+    .single-page{
+        height: 160vh;
+    }
+    .single-page > img {
+        margin-left: 50px;
+    }
+    .single-page > p {
+        text-align: justify;
+    }
 }
 
-.font2{
-    font-size: 100px;
-    font-weight: bold;
-    font-family: "ben";
+/* mobile - m  */
+
+@media(max-width:376px){
+    .single-page{
+        height: 120vh;
+    }
+    .single-page > img{
+        width: 150px;
+        height: 150px;
+        margin-left: 110px;
+    }
 }
 
-.box-sizing{
-    /* padding: 10px 20px 30px 50px; */
-    padding-top: 10px;
-    padding-right: 30px;
-    padding-bottom: 50px;
-    padding-left: 20px;
+/* mobile-s  */
 
-   
-
-    border-top:2px solid red ;
-    border-right:50px solid maroon ;
-    border-bottom:20px solid orange ;
-    border-left:50px solid green ;
-
-    /* margin: 50px 20px 30px 20px; */
-
-    margin-top: 50px;
-    margin-right:30px ;
-    margin-bottom: 30px;
-    margin-left: 20px;
-
-
-}
-
-.box{
-    width: 200px;
-    height: 200px;
-    background-color: aqua;
-
-    border: 10px solid blueviolet;
-
-    padding-left: 80px;
-    padding-top: 80px;
-
-
-    margin-left: 300px;
-    margin-top: 140px;
-    margin-right: 500px;
+@media(max-width:321px){
+    .single-page{
+        height: 130vh;
+    }
+    .single-page > img {
+        margin-left: 80px;
+    }
 }
