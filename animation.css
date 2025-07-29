@@ -1,0 +1,258 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+   
+}
+
+body{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.box{
+    width: 150px;
+    height: 150px;
+}
+
+/* .box1{
+    background-color: aqua;
+    
+}
+.box1:hover{
+    background-color: aqua;
+    transform: translate(-30px);
+    transition: 2s;
+}
+
+.box2{
+    background-color: red;
+    
+}
+.box2:hover{
+    background-color: red;
+    transform: translateX(30px);
+    transition: 2s;
+}
+
+.box3{
+    background-color: green;
+}
+.box3:hover{
+    background-color: green;
+    transform: translateY(30px);
+    transition: 2s;
+}
+
+.box4{
+    background-color: pink;
+}
+.box4:hover{
+    background-color: pink;
+    transform: scale(2);
+    transition: 2s;
+}
+
+.box5{
+    background-color: black;
+}
+.box5:hover{
+    background-color: black;
+    transform: scaleX(2);
+    transition: 2s;
+}
+
+.box6{
+    background-color: blueviolet;
+}
+.box6:hover{
+    background-color: blueviolet;
+     transform: scaleY(2);
+    transition: 2s;
+}
+
+.box7{
+    background-color: chocolate;
+}
+.box7:hover{
+    transform: rotate(-30deg);
+    transition: 2s;
+}
+
+.box8{
+    background-color: darkcyan;
+}
+
+.box8:hover{
+    transform: rotateX(300deg);
+    transition: 5s;
+}
+
+.box9{
+    background-color: gold;
+}
+
+.box9:hover{
+    transform: rotateY(300deg);
+    transition: 5s;
+} */
+
+.box10{
+    background-color: aqua;
+}
+
+.box10:hover{
+    background-color: transparent;
+    animation: leftRight 1s linear infinite alternate;
+    cursor: pointer;
+}
+
+@keyframes leftRight{
+    0%{
+        transform: scale(.5) rotate(360deg);
+        
+        border: 5px solid rgb(0, 255, 247);
+
+        box-shadow: 2px 2px 50px 10px aqua;
+    }
+    100%{
+        
+        border: 50px solid rgb(255, 0, 123);
+
+        border-radius: 50%;
+        box-shadow: 2px 2px 50px 10px rgb(255, 0, 225);
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+button{
+    width: 100px;
+    height: 50px;
+
+    
+}
+
+/* hover  */
+/* active /  */
+/* focus  */
+
+button:hover{
+    background-color: black;
+    color: rgb(253, 0, 0);
+    border-radius: 12px;
+/* 
+    transition: 2s; */
+}
+
+button:active{
+    background-color: red;
+}
+
+button:focus{
+    background-color: yellow;
+    border: 3px solid black;
+    border-radius: 25%;
+}
+
+.card{
+    width: 200px;
+    height: 250px;
+    border: 2px solid black;
+    border-radius: 12px;
+    overflow: hidden;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    background: url(./mark.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+
+    gap: 10px;
+
+    position: relative;
+}
+
+.card > img{
+    width: 200px;
+    margin-top: -35px;
+}
+
+.card > .name{
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    color: rgb(255, 0, 0);
+    font-size: 30px;
+}
+.card>.role{
+    color: rgb(255, 255, 255);
+    font-size: 35px;
+}
+/* .card::after{
+    content: "";
+    width: 100%;
+    height: 100%;
+} */
+
+.card:hover.card::after{
+    content: "⭐⭐⭐⭐⭐";
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background: linear-gradient(to bottom, white, teal, black);
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    cursor: pointer;
+}
+.body{
+    height: 50vh;
+}
+
+.box11{
+    background-color: blue;
+    animation: cal 3s linear;
+    animation-timeline: view();
+    animation-range: 0% cover 40%;
+}
+.box12{
+    background-color: rgb(0, 255, 26);
+    animation: ral 3s linear;
+    animation-timeline: view();
+    animation-range: 0% cover 40%;
+}
+
+@keyframes cal{
+    0%{
+        transform: translateX(500px) rotate(360deg);
+    }
+    100%{
+        transform: translateX(0);
+    }
+}
+@keyframes ral{
+    0%{
+        transform: translateX(-500px) rotate(360deg);
+    }
+    100%{
+        transform: translateX(0);
+    }
+}
